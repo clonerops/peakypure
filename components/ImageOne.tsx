@@ -7,7 +7,7 @@ const ImageOne = () => {
     return (
         <Parallax
             className="relative min-h-screen min-w-full"
-            blur={{ min: -18, max: 18 }}
+            blur={{ min: -18, max: 16 }}
             bgImage="https://iili.io/HodBmtS.jpg"
             bgImageAlt="image one"
             strength={200}
@@ -21,15 +21,24 @@ const ImageOne = () => {
                     alt="peaky-logo"
                 />
             </div>
-            <div className="flex flex-col pr-24 pt-8">
-                <p className="text-white text-xl py-2">تماس با ما</p>
-                <p className="text-white text-4xl">09217767345</p>
-                <p className="text-white text-7xl font-bold py-10 text-brand-accent" >
+            <div className="flex flex-col pt-8 md:pr-24">
+                <p className="text-white text-xl py-2 hidden md:block">
+                    تماس با ما
+                </p>
+                <p className="text-white text-4xl hidden md:block">
+                    09217767345
+                </p>
+                <p className="text-white text-5xl font-bold py-10 text-brand-accent text hidden md:block">
                     بهترین ها را با ما تجربه کنید
                 </p>
-                <button className="bg-primary-color hover:bg-primary-color transition p-8 w-96 text-white text-xl ">
-                    درخواست پشتیبانی
-                </button>
+                <div className="flex flex-col items-center md:block">
+                    <div className="bg-white w-96 text-center p-8 rounded-full m-8 block md:hidden">
+                        <span className="text-2xl">بهترین ها را با ما تجربه کنید</span>
+                    </div>
+                    <button className="bg-primary-color hover:bg-primary-color transition p-8 w-96 text-white text-xl">
+                        درخواست پشتیبانی
+                    </button>
+                </div>
             </div>
         </Parallax>
     );
