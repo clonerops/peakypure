@@ -1,7 +1,10 @@
+import ImageOne from "./ImageOne"
 
 const component = () => {
   return (
-    <div>component</div>
+    <div>
+      <ImageOne />
+    </div>
   )
 }
 
