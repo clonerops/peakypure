@@ -49,4 +49,68 @@ body {
   font-family: YekanThin;
   src: url("../assets/fonts/YekanBakhFaNum-Thin.ttf");
   font-weight: normal;
+}
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media only screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+.header-gradient-text {
+  display: inline-block;
+  font-weight: bold;
+  width: 0%;
+  font-size: 4rem;
+  padding: 4rem;
+  white-space: nowrap;
+  background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-animation: typewriting 1.2s steps(18) 2s 1 normal forwards;
+          animation: typewriting 1.2s steps(18) 2s 1 normal forwards;
+}
+
+@-webkit-keyframes typewriting {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes typewriting {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "../components/Header";
 import ImageOne from "../components/ImageOne";
 
 export default function Home() {
@@ -13,7 +14,9 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
+                {/* <Header /> */}
                 <ImageOne />
+                {/* <Header /> */}
                 <div className="flex justify-center items-center min-h-screen text-white">
                     Content goes here. Parallax height grows with content
                     height.
